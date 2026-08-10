@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <Title>Create and Deleet</Title>
+    </head>
+    <body>
+        <input id="one" value="">
+        <button id="add" onclick="fun()">Add</button>
+        <div id="list"></div>
+        <!-- <div id="list1"></div> -->
+    </body>
+    <script>
+        var o=document.querySelector("#one");
+
+         function dlt(event){
+                event.target.parentElement.remove()
+            }
+        const fun = () =>{
+            console.log(o.value);
+            var print = document.createElement("div");
+    
+            print.innerHTML="<h4>"+o.value+"</h4>"+"<button onclick='dlt(event)'>Remove</button>";
+            // print1.innerText="Remove";
+
+            console.log(print);
+            // print1.onclick(event)={event}
+            var toPrint = document.getElementById("list");
+            console.log(toPrint)
+            toPrint.append(print)
+        }
+    </script>
+</html>

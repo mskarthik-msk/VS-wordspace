@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            Just sample
+        </title>
+        <style>
+            h1{}
+        </style>
+    </head>
+    <body>
+        <h1 id="useMe">Any One</h1>
+        <input type="number" id="one">
+        <input type="number" id="two">
+        <button onclick="cl()">Check</button>
+
+        <h2 id="result">Result</h2>
+    </body>
+    <script>
+
+        var me=document.getElementById("useMe")
+        var o=document.getElementById("one")
+        var t=document.getElementById("two")
+        var r=document.getElementById("result")
+        function cl()
+        {
+            var h=me.textContent+" to "
+            me.textContent="Only One"
+            console.log(h+me.textContent)
+            console.log(o.value)
+            console.log(t.value)
+            a=Number(o.value)+Number(t.value)
+        r.textContent= o.value+" + "+t.value+" = "+a;
+        }
+
+        // for(n=1;n<=5;n++)
+        // {console.log(n*2)}
+            
+        // for(n=5;n>=1;n--)
+        // {console.log(n)}
+        </script>
+</html>

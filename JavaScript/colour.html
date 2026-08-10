@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Colour</title>
+    </head>
+    <body>
+        <h1 id="name"></h1>
+        <button id="id1"class="ck" onclick="fun(event)">Weak-Up</button>
+        <button id="id2"class="ck" onclick="fun(event)">Food</button>
+        <button id="id3"class="ck" onclick="fun(event)">Work</button>
+    </body>
+    <style>
+        .ck{
+            background-color: rgb(255, 255, 255);
+            width: 100pt;
+            height: 55pt;
+        }
+    </style>
+    <script>
+
+        var nm=document.getElementById("name")
+        
+        function fun(event){ 
+            var a=Math.floor(Math.random()*256);
+            var b=Math.floor(Math.random()*256);
+            var c=Math.floor(Math.random()*256);
+
+            var d=document.getElementById(event.target.id);
+
+            nm.textContent = event.target.textContent
+            
+            d.style.backgroundColor="rgb("+a+","+b+","+c+")";
+        }
+    </script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link href="popStyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="torchlight"></div>
+    <div class="nav">
+       <h1>Library</h1>
+    </div>
+    <div class="contain">
+        <div class="sheet">
+            <h2>foCus on the Web</h2>
+            <h4>Tamil</h4>
+            <p>Beatae cupiditate minus culpa doloribus pariatur architecto dicta facilis rem laborum a quia excepturi, odit aut nisi molestias enim libero quod est. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <button onclick="dltParent(event)">Delete</button>
+        </div>
+        <div class="sheet">
+            <h2>Web Details</h2>
+            <h4>Ajith</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. odit aut nisi molestias enim libero quod est.</p>
+            <button onclick="dltParent(event)">Delete</button>
+        </div>
+    </div>
+    <div class="navBG"></div>
+    <div class="navBox">
+        <h1>Add Book</h1>
+        <form>
+            <input type="text" placeholder="Book Name" id="in1">
+            <input type="text" placeholder="Book Author" id="in2">
+            <textarea placeholder="Discription" id="disk"></textarea>
+            <button id="add">Add</button>
+            <button id="can">Cancel</button>
+        </form>
+    </div>
+    <button id="btn">+</button>
+    <script src="popScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Added</title>
+    </head>
+    <body>
+        <input type="text" id="src" onkeyup="alfa()">
+        <h2 id="copy">hi</h2>
+    </body>
+    <script>
+    function alfa(){        
+           var a= document.getElementById("copy")
+           var b= document.getElementById("src")
+           a.textContent=b.value;
+           console.log(b.value);
+    } 
+    
+    </script>
+</html>

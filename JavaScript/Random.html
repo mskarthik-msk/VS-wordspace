@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>
+            Random
+        </title>
+    </head>
+    <body>
+        <h1 id="useMe">Guess the Random Number between 1 to 10</h1>
+        <input type="number" id="one" autofocus style="display: block;">
+        <!-- <br> -->
+        <button onclick="cl()" id="clk" style="margin: 10px 10px 10px 60px;">Check</button>
+        <h2 id="result">Your Score is 10</h2>
+
+        <div id="p"></div>
+    </body>
+    <script>
+        
+        var c=9;
+        
+        function cl()
+        {
+            var o=document.getElementById("one")
+            var r=document.getElementById("result")
+            var ck=document.getElementById("clk")
+            var x=document.getElementById("p")
+            ck.textContent="Check";
+            var a=(Math.floor(Math.random()*10)+1);
+            var res = a +" = "+ o.value;
+            var tag=document.createElement("h4")
+            tag.textContent=res;
+            x.append(tag)
+            console.log(a);
+            // o.style.visibility="visible" // ************** it's just hide the content
+            // x.style.visibility="visible" // ************** it's just hide the content
+            o.style.display="block" // ************** it's just remove the content
+            x.style.display="block" // ************** it's just remove the content
+            // o.hidden="false" ************** //it's not working
+            // x.hidden="false" ************** //it's not working
+            
+            if(o.value==a){
+                r.textContent= "You Win";
+                 x.textContent=""
+                c=10
+                ck.textContent="Restart"
+                if(ck.textContent=="Restart"){
+                        
+                }
+            }else{
+                r.textContent="Your Score is "+c--
+                if(c == -1){
+                    // o.style.visibility="hidden" // ************** it's just hide the content
+                    // o.hidden="true" //************** it's not working
+                    o.style.display="none" // ************** it's just remove the content
+                    x.textContent="" // ************** it's totaly clear the content
+                    r.textContent= "You Loss";
+                    c=10
+                    ck.textContent="Restart"
+                if(ck.textContent=="Restart"){
+                        ck.textContent="Start"
+                }
+                }
+            }
+            o.value="";
+            o.focus();
+        }
+        </script>
+</html>
