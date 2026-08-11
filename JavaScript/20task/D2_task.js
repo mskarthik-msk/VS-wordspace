@@ -163,7 +163,32 @@ if(1<tm && tm<=6){
 
 //T14
 console.log("-------task 14. Nested If – Job Eligibility");
-
+let JAge=25
+let JHeight=167
+let JWeight=65
+if(21<=JAge && JAge<=50)
+{
+    if(150 <= JHeight)
+        {
+        if (60 <= JWeight) 
+            {
+            console.log("Eligible for the Job");
+        } else {
+            console.log("Not eligible, Weigth blow 60 kg");
+        }
+    } else {
+        console.log("Not eligible, Height blow 150 cm");
+    }
+} else {
+    console.log("Not eligible, Age blow 21");
+}
 
 //T15
-console.log("-------task ");
+console.log("-------task Switch – Traffic Light");
+let trafficLight = "green";
+switch(trafficLight){
+    case "red" : console.log("Stop the vehicle"); break;
+    case "yellow" : console.log("Get ready"); break;
+    case "green" : console.log("Go"); break;
+    default : console.log("Invalid traffic light");
+}
