@@ -14,6 +14,8 @@ console.log("-------------------------------------------------------------------
 //task 3
 const company="Stackly"
 // company="TheStackly";
+console.log(company);
+
 console.log("--------------------------------------------------------------------");
 
 //task 4
