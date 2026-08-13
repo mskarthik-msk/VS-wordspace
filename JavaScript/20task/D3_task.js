@@ -47,19 +47,18 @@ console.log("------- Task 3 — Login System with 3 Attempts")
 // let crtUser = "admin";
 // let crtPass = "12345"
 // let limit = 3
-// let atempt = false;
+// let atempt = true;
 // while(limit && atempt > 0){
 //     let inUser  = prompt("Username")
 //     let inPass  = prompt("Password")
-//     if(crtUser === inUser && crtPass === inPass){
-//         limit= true;
-//         alert("Login successful")
+//     if(crtUser == inUser && crtPass == inPass){
+//         atempt= false;
 //     }else{
 //         alert("username or password is Incorrect")
 //         limit--
 //     }
 // }
-// !atempt?alert("Account locked"):console.log("");
+// atempt?alert("Account locked"):alert("Login successful");
 
 //T4
 console.log("------- Task 4 — Student Grade System")
@@ -105,7 +104,7 @@ console.log("*  *  *  *  *  *");
 
 let k, m="";
 for(k=1; k<=5; k++){
-    m+= k +" ";
+    m+= k + " ";     // m = m + k + " ";
 }
 console.log(m);
 
@@ -118,9 +117,12 @@ console.log("------- Task 6 — Shopping Cart")
 let products = ["Laptop", "Mouse", "Keyboard", "Monitor"];
 let prices = [50000, 1000, 2000, 15000];
 let o;
+let total=0;
 for (o=0; o<products.length; o++){
     console.log(products[o]," - ₹",prices[o]);   
+    total+=prices[o];
 }
+console.log(`Total = ₹${total}`);
 
 //T7
 console.log("------- Task 7 — Employee Object")
@@ -132,12 +134,55 @@ let employee = {
     salary: 45000
 };
 
+for(let k in employee){
+    console.log(k ," : ", employee[k]);
+}
+if(employee.salary >= 40000){
+    console.log(`Bonus ₹5000, Your overall Salary ₹${employee.salary + 5000}`);
+}else{
+    console.log(`Bonus ₹3000, Your overall Salary ₹${employee.salary + 3000}`);
+}
+
 //T8
 console.log("------- Task 8 — Bank Account Functions")
 
+// let bankBal = 10000;
 
+// function dep(amt){
+//     bankBal += amt
+// }
+// function wit(amt){
+//     bankBal -= amt    
+// }
+// function Cbal(){
+//     console.log("Current Balance : ",bankBal);
+// }
+
+// let amt =Number (prompt("Deposit"));
+// dep(amt)
+//     amt =Number (prompt("Withdraw"));
+// wit(amt)
+// Cbal()
 
 //T9
 console.log("------- Task 9 — Callback Calculator")
 
+function add(a,b){
+    console.log(a+b);
+}
+function sub(a,b){
+    console.log(a-b);
+}
+function mul(a,b){
+    console.log(a*b);
+}
+function div(a,b){
+    console.log(a/b);
+}
 
+let a=Number (prompt("A"))
+let b=Number (prompt("B"))
+add(a,b)
+sub(a,b)
+mul(a,b)
+div(a,b)
