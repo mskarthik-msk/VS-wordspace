@@ -34,7 +34,7 @@ console.log(typeof dd);
 console.log(typeof ee);
 
 //T4
-console.log("-------task ");
+console.log("-------task 4. Array – Shopping List");
 let arr= ["Shirt", "Pant", "Shoes", "Watch", "Bag", "Cap"]
 console.log(arr[0]);            //1st
 console.log(arr[2]);            //3rd
@@ -184,7 +184,7 @@ if(21<=JAge && JAge<=50)
 }
 
 //T15
-console.log("-------task Switch – Traffic Light");
+console.log("-------task 15. Switch – Traffic Light");
 let trafficLight = "green";
 switch(trafficLight){
     case "red" : console.log("Stop the vehicle"); break;
