@@ -146,43 +146,48 @@ if(employee.salary >= 40000){
 //T8
 console.log("------- Task 8 — Bank Account Functions")
 
-// let bankBal = 10000;
+function dep(amt,bankBal){
+    bankBal += amt
+    return bankBal;
+}
+function wit(amt,bankBal){
+    bankBal -= amt    
+    return bankBal;
+}
+function Cbal(bankBal){
+    return bankBal;
+}
 
-// function dep(amt){
-//     bankBal += amt
-// }
-// function wit(amt){
-//     bankBal -= amt    
-// }
-// function Cbal(){
-//     console.log("Current Balance : ",bankBal);
-// }
-
-// let amt =Number (prompt("Deposit"));
-// dep(amt)
-//     amt =Number (prompt("Withdraw"));
-// wit(amt)
-// Cbal()
+let bankBal = 10000;
+let amt =Number (prompt("Deposit"));
+bankBal= dep(amt,bankBal)
+console.log("Withdraw Amount : ",amt);
+console.log("Current Balance : ",bankBal);
+amt =Number (prompt("Withdraw"));
+bankBal= wit(amt,bankBal)
+console.log("Withdraw Amount : ",amt);
+Cbal(bankBal)
+console.log("Current Balance : ",bankBal);
 
 //T9
 console.log("------- Task 9 — Callback Calculator")
 
-function add(a,b){
-    console.log(a+b);
-}
-function sub(a,b){
-    console.log(a-b);
-}
-function mul(a,b){
-    console.log(a*b);
-}
-function div(a,b){
-    console.log(a/b);
-}
+// function add(a,b){
+//     console.log(a+b);
+// }
+// function sub(a,b){
+//     console.log(a-b);
+// }
+// function mul(a,b){
+//     console.log(a*b);
+// }
+// function div(a,b){
+//     console.log(a/b);
+// }
 
-let a=Number (prompt("A"))
-let b=Number (prompt("B"))
-add(a,b)
-sub(a,b)
-mul(a,b)
-div(a,b)
+// let a=Number (prompt("A"))
+// let b=Number (prompt("B"))
+// add(a,b)
+// sub(a,b)
+// mul(a,b)
+// div(a,b)
