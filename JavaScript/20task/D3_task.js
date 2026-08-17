@@ -28,18 +28,18 @@ console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 //T2
 console.log("------- Task 2 — ATM Withdrawal")
 
-let balance = 10000;
-let withdrawal = prompt("Withdrawal Amount");
-let remain = balance-withdrawal;
-if(100>withdrawal){
-    alert("Enter valid Amount")}
-    else if(balance<withdrawal){
-        alert("Your balance is Low")}
-        else if(withdrawal%100 != 0){
-            alert("Withdrawal amount should be a multiple of 100");}
-            e   lse{
-                alert(`₹${withdrawal} Withdrawal successful, \nRemaining balance: ₹${remain}`)
-            }
+// let balance = 10000;
+// let withdrawal = prompt("Withdrawal Amount");
+// let remain = balance-withdrawal;
+// if(100>withdrawal){
+//     alert("Enter valid Amount")}
+//     else if(balance<withdrawal){
+//         alert("Your balance is Low")}
+//         else if(withdrawal%100 != 0){
+//             alert("Withdrawal amount should be a multiple of 100");}
+//             else{
+//                 alert(`₹${withdrawal} Withdrawal successful, \nRemaining balance: ₹${remain}`)
+//             }
             
 //T3
 console.log("------- Task 3 — Login System with 3 Attempts")
