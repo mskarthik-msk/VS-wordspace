@@ -28,18 +28,18 @@ console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 //T2
 console.log("------- Task 2 — ATM Withdrawal")
 
-// let balance = 10000;
-// let withdrawal = prompt("Withdrawal Amount");
-// let remain = balance-withdrawal;
-// if(100>withdrawal){
-//     alert("Enter valid Amount")}
-//     if(balance<withdrawal){
-//         alert("Your balance is Low")}
-//         if(withdrawal%100 != 0){
-//             alert("Withdrawal amount should be a multiple of 100");}
-//             else{
-//                 alert(`₹${withdrawal} Withdrawal successful, \nRemaining balance: ₹${remain}`)
-//             }
+let balance = 10000;
+let withdrawal = prompt("Withdrawal Amount");
+let remain = balance-withdrawal;
+if(100>withdrawal){
+    alert("Enter valid Amount")}
+    else if(balance<withdrawal){
+        alert("Your balance is Low")}
+        else if(withdrawal%100 != 0){
+            alert("Withdrawal amount should be a multiple of 100");}
+            e   lse{
+                alert(`₹${withdrawal} Withdrawal successful, \nRemaining balance: ₹${remain}`)
+            }
             
 //T3
 console.log("------- Task 3 — Login System with 3 Attempts")
@@ -146,28 +146,28 @@ if(employee.salary >= 40000){
 //T8
 console.log("------- Task 8 — Bank Account Functions")
 
-function dep(amt,bankBal){
-    bankBal += amt
-    return bankBal;
-}
-function wit(amt,bankBal){
-    bankBal -= amt    
-    return bankBal;
-}
-function Cbal(bankBal){
-    return bankBal;
-}
+// function dep(amt,bankBal){
+//     bankBal += amt
+//     return bankBal;
+// }
+// function wit(amt,bankBal){
+//     bankBal -= amt    
+//     return bankBal;
+// }
+// function Cbal(bankBal){
+//     return bankBal;
+// }
 
-let bankBal = 10000;
-let amt =Number (prompt("Deposit"));
-bankBal= dep(amt,bankBal)
-console.log("Withdraw Amount : ",amt);
-console.log("Current Balance : ",bankBal);
-amt =Number (prompt("Withdraw"));
-bankBal= wit(amt,bankBal)
-console.log("Withdraw Amount : ",amt);
-Cbal(bankBal)
-console.log("Current Balance : ",bankBal);
+// let bankBal = 10000;
+// let amt =Number (prompt("Deposit"));
+// bankBal= dep(amt,bankBal)
+// console.log("Withdraw Amount : ",amt);
+// console.log("Current Balance : ",bankBal);
+// amt =Number (prompt("Withdraw"));
+// bankBal= wit(amt,bankBal)
+// console.log("Withdraw Amount : ",amt);
+// Cbal(bankBal)
+// console.log("Current Balance : ",bankBal);
 
 //T9
 console.log("------- Task 9 — Callback Calculator")
