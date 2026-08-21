@@ -6,20 +6,11 @@ let age= "25";
 let department= "Computer Science";
 let cgpa= "8.5";
 console.warn("Normal concatenation");
-    console.log("Name:" + name);
-    console.log("Age:" + age);
-    console.log("Department:" + department);
-    console.log("CGPA:" + cgpa);
+    console.log("Name:" + name + "Age:" + age + "Department:" + department + "CGPA:" + cgpa);
 console.warn("Comma concatenation");
-    console.log("Name:",name);
-    console.log("Age:",age);
-    console.log("Department:",department);
-    console.log("CGPA:",cgpa);
+    console.log("Name:",name,"Age:",age,"Department:",department,"CGPA:",cgpa);
 console.warn("Template literals");
-    console.log(`Name:${name}`);
-    console.log(`Age:${age}`);
-    console.log(`Department:${department}`);
-    console.log(`CGPA:${cgpa}`);    
+    console.log(`Name:${name}Age:${age}Department:${department}CGPA:${cgpa}`);    
 
 //T2
 console.log("------- Task Task 2: Simple Calculator")
